@@ -1,26 +1,27 @@
+<!--login_form.html-->
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Těstovinové recepty</title>
-    
 </head>
 <body>
     <header>
             <div class="header-container-register">
             <div class="main-contact">
-                <img src="../img/email-icon.png" alt="email"><span class="mail">testoviny@firma.cz</span>
+                <img src="img/email-icon.png" alt="email"><span class="mail">testoviny@firma.cz</span>
             </div>
             <div class="log">
-                <a class="login" href="login_form.html">Přihlásit</a>
-                <a class="register active" href="registration_form.html">Registrovat</a>
+                <a class="login active" href="login_form.html">Přihlásit</a>
+                <a class="register" href="registration_form.html">Registrovat</a>
             </div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Domů</a></li>
+                    <li><a href="index.html">Domů</a></li>
                     <li><a href="#">Špagety</a></li>
                     <li><a href="#">Tagliatelle</a></li>
                     <li><a href="#">Fusilli</a></li>
@@ -31,21 +32,17 @@
     <body>
         <main class="reg">
             <section class="registration-container">
-                <form class="registration-form" action="/process_registration" method="post" onsubmit="return validateForm()">
-                    <h1 class="registration-title">Registrace</h1>
-                    
+                <form class="registration-form" action="process_login.php" method="post" onsubmit="return validateForm()">
+                    <h1 class="registration-title">Přihlášení</h1>
+                
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" required>
-                    
+                
                     <label for="password">Heslo:</label>
                     <input type="password" id="password" name="password" required>
-
-                    <label for="confirmPassword">Potvrďte heslo:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
-                    
-                    <input class="register-button" type="submit" value="Registrovat">
-                </form>
                 
+                    <input class="register-button" type="submit" value="Přihlásit">
+                  </form>
             </section>
         </main>
     </body>
