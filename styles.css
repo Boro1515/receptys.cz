@@ -180,6 +180,12 @@ nav ul li a:hover {
 .top-article:hover {
     box-shadow: 1px 1px 19px rgb(79, 137, 97);
 }
+
+.recipe-detail-click {
+    text-decoration: none;
+    color: black;
+    min-width: 81%;
+}
 /* TOP SECTION END*/
 
 
@@ -370,8 +376,59 @@ footer {
 }
 /* AFTER REGISTRATION PAGE END */
 
-.recipe-detail {
-    text-decoration: none;
-    color: black;
-    min-width: 81%;
+
+
+
+
+
+
+
+
+
+
+/* RECIPE DETAIL START */
+
+.container-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.main-detail {
+    flex: 2;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.one {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin: 5px;
+}
+
+aside.left {
+    flex: 1;
+    background-color: #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+
+aside.right {
+    flex: 1;
+    background-color: #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .container-detail {
+        flex-direction: column;
+    }
+    aside.left, aside.right {
+        flex: 100%;
+    }
+}
+
+/* RECIPE DETAIL END */
