@@ -422,11 +422,18 @@ footer {
 
 }
 
+@media (max-width:600px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .flex-img-detail {
     flex: 2;
     background-color: #ffffff;
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 10px;
 }
 
 
@@ -436,6 +443,7 @@ aside.left {
     background-color: #ddd;
     margin-top: 118px;
     margin-left: 30px;
+    margin-right: 10px;
     padding: 20px 10px 20px 40px;
 }
 
@@ -449,6 +457,13 @@ aside.right {
 
 }
 
+@media (max-width:1100px) {
+    aside.left, aside.right {
+        flex: 100%;
+        margin: 10px;
+    }
+}
+
 .flex-box-img {
     display: flex;
     justify-content: center;
@@ -460,22 +475,19 @@ aside.right {
     .container {
         flex-direction: column;
     }
-    aside.left, aside.right {
-        flex: 100%;
-        margin: 10px;
-    }
 }
 
 
 .img-detail {
-    max-width: 700px;
+    max-width: 600px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .img-detail {
-        max-width: 500px;
+        width: 100%; 
     }
 }
+
 
 .img-detail-title {
     margin-top: 30px;
@@ -490,21 +502,20 @@ aside.right {
 
 .process-text {
     margin-top: 20px;
-    font-family: 'Georgia', serif;
 }
 
 .raw-text {
     margin-top: 10px;
-    font-family: 'Georgia', serif;
 }
 
 .raw-all-text {
     margin-top: 20px;
+    margin-left: 16px;
 }
 
 .raw-detail-title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 /* RECIPE DETAIL END */
