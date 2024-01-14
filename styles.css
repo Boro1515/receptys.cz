@@ -192,7 +192,6 @@ nav ul li a:hover {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Nový styl pro tři čárky */
 .hamburger-menu:not(.active) .bar {
     transition: all 0.3s ease;
 }
@@ -390,18 +389,7 @@ footer {
 }
 /* FOOTER END */
 
-/* FOOTER REGISTER PAGE START */
-.footer-registration-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    font-size: 16px;
-    color: white;
-    background-color: black;
-    margin-top: 280px;
-}
-/* FOOTER REGISTER PAGE END */
+
 
 /* FOOTER LOGIN PAGE START */
 .footer-login-page {
@@ -412,11 +400,13 @@ footer {
     font-size: 16px;
     color: white;
     background-color: black;
-    margin-top: 370px;
+    margin-top: 372px;
 }
 /* FOOTER LOGIN PAGE END */
 
-/* FOOTER LOGIN PAGE START */
+
+
+/* FOOTER RECIPE PAGE START */
 .footer-recipe-detail {
     display: flex;
     justify-content: center;
@@ -430,18 +420,6 @@ footer {
 /* FOOTER LOGIN PAGE END */
 
 
-/* AFTER REGISTRATION FOOTER PAGE START */
-.footer-login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    font-size: 16px;
-    color: white;
-    background-color: black;
-    margin-top: 750px;
-}
-/* AFTER REGISTRATION FOOTER PAGE END */
 
 
 
