@@ -121,7 +121,7 @@ nav ul li {
     transition: 0.3s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     nav ul li {
         padding: 10px;
     }
@@ -151,6 +151,34 @@ nav ul li a:hover {
 
 
 
+/* HAMBURGER MENU START */
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: rgb(43, 43, 43);
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 3px;
+    padding-left: 30px;
+}
+
+@media (max-width: 700px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+/* HAMBURGER MENU END */
 
 
 
@@ -397,35 +425,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* RECIPE DETAIL START */
 
 .container {
@@ -533,4 +532,5 @@ aside.right {
 }
 
 /* RECIPE DETAIL END */
+
 
