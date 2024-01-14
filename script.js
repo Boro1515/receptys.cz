@@ -17,3 +17,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navList = document.querySelector('nav ul');
+
+    hamburgerMenu.addEventListener('click', function () {
+        hamburgerMenu.classList.toggle('active');
+        navList.classList.toggle('active');
+    });
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 700) {
+            navList.style.display = 'flex';
+            hamburgerMenu.classList.remove('active'); // Přidáno: Zajistí, že ikona bude vypadat jako tři čárky
+        } else {
+            navList.style.display = 'none';
+        }
+    });
+});
+

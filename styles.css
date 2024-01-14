@@ -177,7 +177,39 @@ nav ul li a:hover {
     nav ul {
         display: none;
     }
+    
 }
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Nový styl pro tři čárky */
+.hamburger-menu:not(.active) .bar {
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu:not(.active) .bar:nth-child(1) {
+    transform: translateY(0) rotate(0);
+}
+
+.hamburger-menu:not(.active) .bar:nth-child(2) {
+    opacity: 1;
+}
+
+.hamburger-menu:not(.active) .bar:nth-child(3) {
+    transform: translateY(0) rotate(0);
+}
+
+
 /* HAMBURGER MENU END */
 
 
