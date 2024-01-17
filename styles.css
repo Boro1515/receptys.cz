@@ -107,6 +107,7 @@ nav ul {
     height: 80px;
     background-color: rgb(43, 43, 43);
     list-style-type: none;
+    animation: fadeIn 1s ease;
 }
 
 @media (max-width: 700px) {
@@ -119,6 +120,8 @@ nav ul {
 nav ul li {
     font-size: 20px;
     transition: 0.3s;
+    animation: fadeIn 1s ease;
+    animation-fill-mode: forwards;
 }
 
 @media (max-width: 768px) {
@@ -206,6 +209,18 @@ nav ul li a:hover {
 
 .hamburger-menu:not(.active) .bar:nth-child(3) {
     transform: translateY(0) rotate(0);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -517,6 +532,12 @@ aside.right {
     text-shadow: 1px 1px 7px rgb(76, 70, 70);
 }
 
+@media (max-width: 500px) {
+    .img-detail-title {
+        font-size: 15px;
+    }
+}
+
 .img-title {
     display: flex;
     justify-content: center;
@@ -542,5 +563,4 @@ aside.right {
 }
 
 /* RECIPE DETAIL END */
-
 
