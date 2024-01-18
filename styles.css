@@ -491,10 +491,9 @@ aside.right {
     margin-top: 118px;
     margin-right: 30px;
     padding: 20px 10px 20px 40px;
-
 }
 
-@media (max-width:1100px) {
+@media (max-width:1400px) {
     aside.left, aside.right {
         flex: 100%;
         margin: 10px;
@@ -509,11 +508,7 @@ aside.right {
 }
 
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-}
+
 
 
 .img-detail {
