@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     window.addEventListener('resize', function () {
-        if (window.innerWidth > 700) {
+        if (window.innerWidth > 715) {
             navList.style.display = 'flex';
             hamburgerMenu.classList.remove('active');
         } else {
