@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
             navList.style.display = 'flex';
             hamburgerMenu.classList.remove('active');
         } else {
-            navList.style.display = 'none';
+            if (!hamburgerMenu.classList.contains('active')) {
+                // Přidáno podmíněné zobrazení hamburger menu pouze při neaktivním stavu
+                navList.style.display = 'none';
+            }
         }
     });
 });
-
