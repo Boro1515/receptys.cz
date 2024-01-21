@@ -467,7 +467,6 @@ footer {
 }
 
 .flex-img-detail {
-    flex: 2;
     background-color: #ffffff;
     margin: 20px 0px 10px 10px;
     padding: 0px 0px 10px 0px;
@@ -476,29 +475,31 @@ footer {
 
 
 aside.left {
-    flex: 1;
+    flex: 100%;
     background-color: #ddd;
-    margin-top: 118px;
-    margin-left: 30px;
-    margin-right: 10px;
-    padding: 20px 10px 20px 40px;
+    margin: 10px;
+    padding: 30px;
+    max-width: 70%;
+  
 }
 
 
 aside.right {
-    flex: 1;
+    flex: 100%;
     background-color: #ddd;
-    margin-top: 118px;
-    margin-right: 30px;
-    padding: 20px 10px 20px 40px;
+    margin: 10px;
+    padding: 30px;
+    max-width: 70%;
+  
 }
 
-@media (max-width:1400px) {
+@media (max-width: 1200px) {
     aside.left, aside.right {
-        flex: 100%;
-        margin: 10px;
+        max-width: 100%;
     }
 }
+
+
 
 .flex-box-img {
     display: flex;
@@ -558,4 +559,3 @@ aside.right {
 }
 
 /* RECIPE DETAIL END */
-
