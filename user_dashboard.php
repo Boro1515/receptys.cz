@@ -27,6 +27,11 @@ if (!isset($_SESSION['user_email'])) {
             </div>
         </div>
         <nav>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <ul>
                 <li><a href="index.php">Domů</a></li>
                 <li><a href="#">Špagety</a></li>
@@ -45,5 +50,6 @@ if (!isset($_SESSION['user_email'])) {
     <footer class="footer-login-page">
         <p>© 2023 Boro`s websites, All Right Reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

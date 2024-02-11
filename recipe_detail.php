@@ -17,7 +17,7 @@ session_start();
             <div class="main-contact">
                 <img src="img/email-icon.png" alt="email"><span class="mail">testoviny@firma.cz</span>
             </div>
-
+            
             <?php
             if (isset($_SESSION['user_email'])) {
                 // Pokud je uživatel přihlášen, zobrazí se odkazy pro přihlášeného uživatele
@@ -27,14 +27,13 @@ session_start();
                       </div>';
             } else {
                 // Pokud uživatel není přihlášen, zobrazí se standardní odkazy pro přihlášení/registraci
-                echo '<div>
+                echo '<div class="log">
                         <a class="login" href="login_form.html">Přihlásit</a>
                         <a class="register" href="registration_form.html">Registrovat</a>
                       </div>';
             }
             ?>
         </div>
-    </header>
         <nav>
             <div class="hamburger-menu">
                 <div class="bar"></div>
