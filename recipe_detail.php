@@ -13,7 +13,7 @@ session_start();
 
 <body>
     <header>
-        <div class="header-container">
+        <div class="header-container-register">
             <div class="main-contact">
                 <img src="img/email-icon.png" alt="email"><span class="mail">testoviny@firma.cz</span>
             </div>
