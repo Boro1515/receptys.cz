@@ -23,7 +23,7 @@ if (!isset($_SESSION['user_email'])) {
             </div>
             <div class="log">
                 <a class="login" href="user_dashboard.php">Můj účet</a>
-                <a class="register" href="index.php">Odhlásit</a>
+                <a class="register" href="users_logout.php">Odhlásit</a>
             </div>
         </div>
         <nav>

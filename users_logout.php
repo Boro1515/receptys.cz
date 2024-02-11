@@ -34,6 +34,9 @@ session_start();
             }
             ?>
         </div>
+        <div>
+            <p>Byl jste úspěšně odhlášen</p>
+        </div>
     </header>
 
         <div><img class="main-img" src="img/pasta.jpg" alt="Těstoviny"></div>

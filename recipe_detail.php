@@ -23,7 +23,7 @@ session_start();
                 // Pokud je uživatel přihlášen, zobrazí se odkazy pro přihlášeného uživatele
                 echo '<div class="log">
                         <a class="login" href="user_dashboard.php">Můj účet</a>
-                        <a class="register" href="logout.php">Odhlásit</a>
+                        <a class="register" href="users_logout.php">Odhlásit</a>
                       </div>';
             } else {
                 // Pokud uživatel není přihlášen, zobrazí se standardní odkazy pro přihlášení/registraci
