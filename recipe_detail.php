@@ -1,24 +1,40 @@
-<!--login_form.html-->
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Těstovinové recepty</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <div class="header-container-register">
+        <div class="header-container">
             <div class="main-contact">
                 <img src="img/email-icon.png" alt="email"><span class="mail">testoviny@firma.cz</span>
             </div>
-            <div class="log">
-                <a class="login" href="login_form.html">Přihlásit</a>
-                <a class="register" href="registration_form.html">Registrovat</a>
-            </div>
+
+            <?php
+            if (isset($_SESSION['user_email'])) {
+                // Pokud je uživatel přihlášen, zobrazí se odkazy pro přihlášeného uživatele
+                echo '<div class="log">
+                        <a class="login" href="user_dashboard.php">Můj účet</a>
+                        <a class="register" href="logout.php">Odhlásit</a>
+                      </div>';
+            } else {
+                // Pokud uživatel není přihlášen, zobrazí se standardní odkazy pro přihlášení/registraci
+                echo '<div>
+                        <a class="login" href="login_form.html">Přihlásit</a>
+                        <a class="register" href="registration_form.html">Registrovat</a>
+                      </div>';
+            }
+            ?>
         </div>
+    </header>
         <nav>
             <div class="hamburger-menu">
                 <div class="bar"></div>
@@ -26,7 +42,7 @@
                 <div class="bar"></div>
             </div>
             <ul>
-                <li><a href="index.html">Domů</a></li>
+                <li><a href="index.php">Domů</a></li>
                 <li><a href="#">Špagety</a></li>
                 <li><a href="#">Tagliatelle</a></li>
                 <li><a href="#">Fusilli</a></li>
