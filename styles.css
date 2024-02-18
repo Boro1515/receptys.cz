@@ -561,3 +561,23 @@ aside.right {
 /* RECIPE DETAIL END */
 
 
+
+
+
+
+/* USER DASHBOARD START */
+.user-dashboard {
+    display: flex;
+    justify-content: center;
+    font-size: 25px ;
+    margin-top: 25px;
+}
+
+.favorite-recipe {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+ 
+/* USER DASHBOARD END */
+

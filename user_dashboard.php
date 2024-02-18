@@ -41,12 +41,14 @@ if (!isset($_SESSION['user_email'])) {
             </ul>
         </nav>
     </header>
-    
-    <body>
-        <h2 class="welcome-dashboard">Vítejte <?= $_SESSION['user_email']; ?>!</h2><br>
-        <h2 class="welcome-dashboard">Vaše oblíbené recepty</h2>
-    </body>
-    
+    <main>
+            <div class="user-dashboard">
+                <span class="mail">Účet uživatele <?= $_SESSION['user_email']; ?></span>
+            </div>
+            <div class="favorite-recipe">
+                <h2>Vaše oblíbené recepty</h2>
+            </div>
+    </main>
     <footer class="footer-login-page">
         <p>© 2023 Boro`s websites, All Right Reserved.</p>
     </footer>
