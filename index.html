@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="cs">
@@ -15,25 +12,7 @@ session_start();
     <header>
         <div class="header-container">
             <div class="main-contact">
-                <img src="img/email-icon.png" alt="email"><span class="mail">testoviny@firma.cz</span>
-            </div>
-
-            <?php
-            if (isset($_SESSION['user_email'])) {
-                // Pokud je uživatel přihlášen, zobrazí se odkazy pro přihlášeného uživatele
-                echo '<div class="log">
-                        <a class="login" href="user_dashboard.php">Můj účet</a>
-                        <a class="register" href="users_logout.php">Odhlásit</a>
-                      </div>';
-            } else {
-                // Pokud uživatel není přihlášen, zobrazí se standardní odkazy pro přihlášení/registraci
-                echo '<div>
-                        <a class="login" href="login_form.html">Přihlásit</a>
-                        <a class="register" href="registration_form.html">Registrovat</a>
-                      </div>';
-            }
-            ?>
-        </div>
+                <img src="img/email-icon.png" alt="email"><span class="mail">testovina@firma.cz</span>
     </header>
 
         <div><img class="main-img" src="img/pasta.jpg" alt="Těstoviny"></div>
@@ -51,7 +30,7 @@ session_start();
                 <li><a href="#">Penne</a></li>
             </ul>
         </nav>
-    </header>
+    
 
     <main>
         <section class="top-section">
@@ -127,7 +106,7 @@ session_start();
     </main>
 
     <footer>
-        <p>© 2023 Boro`s websites, All Right Reserved.</p>
+            <p>© 2023 Boro`s websites, All Right Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

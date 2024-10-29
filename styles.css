@@ -6,7 +6,6 @@
 }
 
 /* MAIN CONTACT NAVIGATION START*/
-
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -77,7 +76,6 @@
 .register:hover {
     background: rgb(77, 189, 77);
 }
-
 /* MAIN CONTACT NAVIGATION END*/
 
 
@@ -99,7 +97,6 @@
 
 
 /* NAVIGATION MENU START */
-
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -147,15 +144,12 @@ nav ul li a:hover {
 .active {
     color: orange;
 }
-
-
 /* NAVIGATION MENU END */
 
 
 
 
 /* HAMBURGER MENU START */
-
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -222,8 +216,6 @@ nav ul li a:hover {
         transform: translateY(0);
     }
 }
-
-
 /* HAMBURGER MENU END */
 
 
@@ -232,7 +224,6 @@ nav ul li a:hover {
 
 
 /* TOP SECTION START*/
-
 .top-section-section {
     display: flex;
     flex-direction: column;
@@ -292,14 +283,12 @@ nav ul li a:hover {
         max-width: 30%;
     }
 }
-
 /* RECEPT PICTURE END */
 
 
 
 
 /* NEXT RECEPT START */
-
 .next-recept {
     display: flex;
     justify-content: center;
@@ -322,7 +311,6 @@ nav ul li a:hover {
 .next-recept a:hover {
     color: rgb(66, 148, 47);
 }
-
 /* NEXT RECEPT END */
 
 
@@ -331,7 +319,6 @@ nav ul li a:hover {
 
 
 /* REGISTRATION START */
-
 .registration-title {
     display: flex;
     justify-content: center;
@@ -386,7 +373,6 @@ input {
         min-width: 300px;
     }
 }
-
 /* REGISTRATION END */
 
 
@@ -451,7 +437,6 @@ footer {
 
 
 /* RECIPE DETAIL START */
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -557,7 +542,6 @@ aside.right {
     display: flex;
     justify-content: flex-start;
 }
-
 /* RECIPE DETAIL END */
 
 
@@ -578,6 +562,13 @@ aside.right {
     justify-content: center;
     margin-top: 150px;
 }
- 
 /* USER DASHBOARD END */
+
+
+
+/* WEB DASBOARD START */
+.web-dashboard {
+    color: rgb(202, 13, 13);
+}
+/* WEB DASBOARD END */
 
